@@ -1,0 +1,7 @@
+#data后面必须有个空格
+#注册成功的，带昵称的
+- data: {"mobilephone":18087654301,"pwd":"12345678","regname":"yayaya"}
+  expect: {"status":1,"code":"10001","data":None,"msg":"注册成功"}
+#注册成功的，不带昵称的
+- data: {"mobilephone":18023456701,"pwd":"12345678","regname":""}
+  expect: {"status":1,"code":"10001","data":None,"msg":"注册成功"}
